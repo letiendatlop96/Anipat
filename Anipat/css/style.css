@@ -1,0 +1,646 @@
+        /* CÁC KIẾN THỨC CSS CHÍNH ĐÃ ÁP DỤNG: 
+        float,width,padding,margin,background-image,background-position
+        background-cover,position, box-shadow, transform, transition,...
+        */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            word-break: normal
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            overflow-x: hidden;
+        }
+        
+        html,
+        body {
+            background-color: #fff;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-size: 1rem;
+            margin: auto;
+            max-width: 1920px;
+            min-width: 1280px;
+        }
+        
+        a,
+        li {
+            text-decoration: none;
+        }
+        
+        ul {
+            list-style-type: none;
+        }
+        
+        .Clear {
+            clear: both;
+        }
+        
+        .Container {
+            width: 1200px;
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        
+        button {
+            padding: 10px 30px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            color: #ff6d48;
+            border: 1px solid #efa592;
+            border-radius: 200px;
+            cursor: pointer;
+            width: 150px;
+        }
+        /* Header */
+        
+        .Header {
+            background-color: #1c1818;
+            color: #ececec;
+            width: 100%;
+        }
+        
+        .Header .Title_Left,
+        .Header .Title_Right {
+            float: left;
+            width: 50%;
+        }
+        
+        .Header .Title_Left {
+            padding-left: 8rem;
+        }
+        
+        .Header .Title_Left span {
+            padding-left: 4rem;
+        }
+        
+        .Header .Title_Left a {
+            color: #ececec;
+            transition: all 0.2s linear;
+        }
+        
+        .Header .Title_Left a:hover {
+            color: #e62b4a;
+            text-decoration: none;
+        }
+        
+        .Header .Title_Right {
+            padding-left: 22rem;
+        }
+        
+        .Header .Title_Right i {
+            color: #c2c2c2;
+            width: 1.4rem;
+            height: 1.4rem;
+            transition: all 0.4s linear;
+        }
+        
+        .Header .Title_Right i:hover {
+            color: #e62b4a;
+        }
+        
+        .Header .Title_Right a {
+            padding-right: 1rem;
+        }
+        
+        .Header .navbar {
+            background-color: #ffffff;
+        }
+        
+        .Header .navbar .navbar-nav {
+            margin-left: 25rem;
+            font-size: 1rem;
+        }
+        
+        .Header .navbar .navbar-brand {
+            margin-left: 8rem;
+        }
+        
+        .Header .navbar .nav-item {
+            color: #2c4169 !important;
+            font-weight: bold;
+            padding-left: 1rem;
+            z-index: 100;
+        }
+        
+        .Header .Hd-container {
+            width: 100%;
+            margin: auto;
+            padding: 0.5rem;
+        }
+        /* Carousel */
+        
+        .Carousel .Hd-container .Banner img {
+            width: 100%;
+            height: 600px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: left right;
+            position: relative;
+            margin-bottom: 2rem;
+        }
+        
+        .Carousel .Hd-container .Content_Left,
+        .Carousel .Hd-container .Content_Right {
+            float: left;
+            width: 50%;
+        }
+        
+        .Carousel .Hd-container .Content {
+            width: 80%;
+            position: absolute;
+            top: 14rem;
+            left: 8rem;
+            font-size: 1rem;
+        }
+        
+        .Carousel .Hd-container .Content_Right img {
+            width: 65%;
+            height: 550px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            top: 14rem;
+            left: 22rem;
+        }
+        
+        .Carousel .Hd-container .Content_Left {
+            color: #ffffff;
+        }
+        
+        .Carousel .Hd-container .Content_Left h1:first-of-type {
+            font-weight: lighter;
+            font-size: 4.2rem;
+            margin-bottom: -0.5rem;
+        }
+        
+        .Carousel .Hd-container .Content_Left h1:last-of-type {
+            font-weight: bolder;
+            font-size: 4.2rem;
+        }
+        
+        .Carousel .Hd-container .Content_Left button {
+            margin-top: 3.5rem;
+            font-weight: bold;
+            transform: scale(1, 1);
+            transition: all 0.3s ease-in;
+        }
+        
+        .Carousel .Hd-container .Content_Left button:hover {
+            background-color: #f04633;
+            color: #fff;
+            transform: scale(1.2);
+        }
+        /* Service */
+        
+        .Service {
+            margin-top: 10rem;
+            text-align: center;
+            color: #191d33;
+        }
+        
+        .Service .Container .Title {
+            font-size: 1rem;
+        }
+        
+        .Service .Container .List {
+            margin-left: 3rem;
+        }
+        
+        .Service .Container .List .Item .Content {
+            position: relative;
+            margin: 0 auto;
+            padding: 0.8rem;
+            transform: translate(0, 0);
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .Service .Container .List .Item .Content:hover {
+            transform: translate(0, -1rem);
+        }
+        
+        .Service .Container .Title h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        
+        .Service .Container .Title p {
+            color: #bebebf;
+            margin-bottom: 4rem;
+        }
+        
+        .Service .Container .List .Item {
+            float: left;
+            width: calc(100/3);
+            margin: 4rem 1rem 0 0;
+        }
+        
+        .Service .Container .List .Item {
+            border: 1px solid #ffeeed;
+            box-shadow: 0.2rem 0.3rem 0.4rem rgba(0, 0, 0, 0.2);
+        }
+        
+        .Service .Container .List .Item .Content .Image .Service_Icon {
+            position: absolute;
+            top: 2.4rem;
+            right: 7.1rem;
+        }
+        
+        .Service .Container .List .Item .Sub_Content {
+            color: #1f2338;
+            margin-top: 2rem;
+        }
+        
+        .Service .Container .List .Item .Sub_Content p {
+            color: #bebebf;
+        }
+        /* About */
+        
+        .About {
+            color: #191d33;
+            margin-top: 12rem;
+        }
+        
+        .About .Container .About_Left,
+        .About .Container .About_Right {
+            float: left;
+            width: 50%;
+        }
+        
+        .About .Container .About_Right {
+            margin-top: 5rem;
+        }
+        
+        .About .Container .About_Right h1:first-of-type {
+            font-weight: 400;
+            font-size: 3.5rem;
+        }
+        
+        .About .Container .About_Right h1:last-of-type {
+            font-weight: bolder;
+            font-size: 3.5rem;
+            margin-bottom: 3rem;
+        }
+        
+        .About .Container .About_Right p {
+            color: #bebebf;
+            margin-bottom: 3rem;
+        }
+        
+        .About .Container .About_Right button {
+            margin-top: 10rem;
+            font-weight: bold;
+            padding: 0.8rem 1.2rem;
+            margin: 0 auto;
+            background-image: linear-gradient(to right, #f04633, #ed5617);
+            color: #ffffff;
+            border: 1px solid #efa592;
+            border-radius: 200px;
+            cursor: pointer;
+            width: 10rem;
+            transform: scale(1, 1);
+            transition: all 0.3s ease-in;
+        }
+        
+        .About .Container .About_Right button:hover {
+            background-image: linear-gradient(to left, #f04633, #ed5617);
+            transform: scale(1.2);
+        }
+        /* Contact */
+        
+        .Contact .Container {
+            margin-top: 10rem;
+            color: #191d33;
+            padding-top: 6rem;
+        }
+        
+        .Contact .Container .Contact_Left,
+        .Contact .Container .Contact_Right {
+            float: left;
+            width: 50%;
+        }
+        /* Xử lý lại phần chia 3 Item này */
+        
+        .Contact .Container .Contact_Right .List .Item .Item_Left,
+        .Contact .Container .Contact_Right .List .Item .Item_Right {
+            float: left;
+            width: 50%;
+        }
+        
+        .Contact .Container .Contact_Left h1:first-of-type {
+            font-weight: 400;
+            font-size: 3.5rem;
+        }
+        
+        .Contact .Container .Contact_Left h1:last-of-type {
+            font-weight: bolder;
+            font-size: 3rem;
+            margin-bottom: 3rem;
+        }
+        
+        .Contact .Container .Contact_Left p {
+            color: #bebebf;
+            margin-bottom: 3rem;
+        }
+        
+        .Contact .Container .Contact_Left button {
+            margin-top: 10rem;
+            font-weight: bold;
+            padding: 0.8rem 1.2rem;
+            margin: 0 auto;
+            background-image: linear-gradient(to right, #f04633, #ed5617);
+            color: #ffffff;
+            border: 1px solid #efa592;
+            border-radius: 200px;
+            cursor: pointer;
+            width: 10rem;
+            transform: scale(1, 1);
+            transition: all 0.3s ease-in;
+        }
+        
+        .Contact .Container .Contact_Left button:hover {
+            transform: scale(1.2);
+            background-image: linear-gradient(to left, #f04633, #ed5617);
+        }
+        
+        .Contact .Container .Contact_Left {
+            margin-top: 7rem;
+        }
+        
+        .Contact .Container .Contact_Right {
+            margin: 0 auto;
+            padding: 1.8rem;
+            transform: translate(0, 0);
+            transition: all 0.3s ease-in-out;
+            text-align: center;
+        }
+        
+        .Contact .Container .Contact_Right .List .Item .Item_Left {
+            border: 1px solid #fff;
+            margin-top: 10rem;
+            width: 12rem;
+            height: 14rem;
+            padding-right: 1rem;
+            box-shadow: 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.1);
+            transform: scale(1, 1);
+            transition: all 0.3s ease-in;
+        }
+        
+        .Contact .Container .Contact_Right .List .Item .Item_Left:hover {
+            background-image: linear-gradient(to left, #f04633, #ed5617);
+            transform: scale(1.1);
+        }
+        
+        .Contact .Container .Contact_Right .List .Item .Item_Left .Content h1 {
+            font-weight: bolder;
+        }
+        
+        .Contact .Container .Contact_Right .List .Item .Item_Left .Content p {
+            font-size: 1.3rem;
+            color: #8b8b8b;
+        }
+        
+        .Contact .Container .Contact_Right .List .Item .Item_Left .Content img {
+            margin-bottom: 1rem;
+        }
+        
+        .Contact .Container .Contact_Right .List .Item .Item_Right {
+            margin: 2rem 1rem;
+        }
+        
+        .Contact .Container .Contact_Right .List .Item .Item_Right .Content_3 {
+            border: 1px solid #fff;
+            width: 12rem;
+            height: 14rem;
+            box-shadow: 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+            margin-top: 2rem;
+            transform: scale(1, 1);
+            transition: all 0.3s ease-in;
+        }
+        
+        .Contact .Container .Contact_Right .List .Item .Item_Right .Content_3:hover {
+            background-image: linear-gradient(to left, #f04633, #ed5617);
+            transform: scale(1.1);
+        }
+        
+        .Contact .Container .Contact_Right .List .Item .Item_Right .Content_3 h1 {
+            font-weight: bolder;
+        }
+        
+        .Contact .Container .Contact_Right .List .Item .Item_Right .Content_3 p {
+            font-size: 1.3rem;
+            color: #8b8b8b;
+        }
+        
+        .Contact .Container .Contact_Right .List .Item .Item_Right .Content_3 img {
+            margin-bottom: 1rem;
+        }
+        
+        .Contact .Container .Contact_Right .List .Item .Item_Right .Content_2 {
+            border: 1px solid #fff;
+            width: 12rem;
+            height: 14rem;
+            box-shadow: 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.1);
+            transform: scale(1, 1);
+            transition: all 0.3s ease-in;
+        }
+        
+        .Contact .Container .Contact_Right .List .Item .Item_Right .Content_2:hover {
+            background-image: linear-gradient(to left, #f04633, #ed5617);
+            transform: scale(1.1);
+        }
+        
+        .Contact .Container .Contact_Right .List .Item .Item_Right .Content_2 h1 {
+            font-weight: bolder;
+        }
+        
+        .Contact .Container .Contact_Right .List .Item .Item_Right .Content_2 p {
+            font-size: 1.3rem;
+            color: #8b8b8b;
+        }
+        
+        .Contact .Container .Contact_Right .List .Item .Item_Right .Content_2 img {
+            margin-bottom: 1rem;
+        }
+        /* Team */
+        
+        .Team {
+            text-align: center;
+            margin-top: 10rem;
+            color: #191d33;
+        }
+        
+        .Team .Container .Title h1 {
+            font-weight: bolder;
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .Team .Container .Title p {
+            color: #bebebf;
+        }
+        
+        .Team .Container .List .Item {
+            float: left;
+            width: calc(100/3);
+            margin-top: 5rem;
+            padding-right: 1rem;
+            position: relative;
+            filter: grayscale(80%);
+            transform: scale(1, 1);
+            transition: all 0.3s ease-in;
+        }
+        
+        .Team .Container .List .Item:hover {
+            transform: scale(1.1);
+            filter: grayscale(0%);
+        }
+        
+        .Team .Container .List .Item .Content img {
+            width: 90%;
+        }
+        
+        .Team .Container .List .Item .Content .Name {
+            margin-top: 10rem;
+            padding: 0rem 2rem;
+            background-color: #ffffff;
+            color: #000;
+            border: 1px solid #fff;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            width: 11rem;
+            position: absolute;
+            top: 5rem;
+            right: 6.5rem;
+            box-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            transform: rotate(0deg);
+            transition: all 0.8s ease-out;
+        }
+        
+        .Team .Container .List .Item:hover .Content .Name {
+            opacity: 1;
+            transform: rotate(360deg);
+        }
+        
+        .Team .Container .List .Item .Content .Name h3 {
+            font-size: 1.2rem;
+        }
+        /* ContactInfo */
+        
+        .ContactInfo {
+            text-align: center;
+            color: #ffffff;
+        }
+        
+        .ContactInfo .Hd-container {
+            background-image: url(../img/contact_bg.png);
+            width: 100%;
+            height: 30rem;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-top: 10rem;
+        }
+        
+        .ContactInfo .Hd-container .Content {
+            position: absolute;
+            top: 262rem;
+            left: 23rem;
+        }
+        
+        .ContactInfo .Hd-container .Content h1 {
+            margin-bottom: 1.5rem;
+            font-weight: bolder;
+        }
+        
+        .ContactInfo .Hd-container .Content h3 {
+            margin-bottom: 1rem;
+            font-weight: 400;
+        }
+        
+        .ContactInfo .Hd-container .Content button {
+            font-weight: bolder;
+            margin: 3rem 0 0 0;
+            padding: 0.8rem 2rem;
+            transform: scale(1, 1);
+            transition: all 0.3s ease-in;
+        }
+        
+        .ContactInfo .Hd-container .Content button:hover {
+            transform: scale(1.2);
+            background-image: linear-gradient(to left, #f04633, #ed5617);
+            color: #fff;
+        }
+        
+        .ContactInfo .Hd-container .Content span {
+            margin: 0 1rem;
+        }
+        
+        .ContactInfo .Hd-container .Content a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            transition: all 0.4s linear;
+        }
+        
+        .ContactInfo .Hd-container .Content a:hover {
+            color: #2c4169;
+        }
+        /* Footer */
+        
+        .Footer {
+            margin-top: 10rem;
+        }
+        
+        .Footer .Container .List .Item {
+            float: left;
+            width: 25%;
+        }
+        
+        .Footer .Container .List .Item .Content a,
+        .Footer .Container .List .Item .Content p {
+            color: #7b7b7b;
+            transition: all 0.4s linear;
+        }
+        
+        .Footer .Container .List .Item .Content a:hover,
+        .Footer .Container .List .Item .Content p:hover {
+            text-decoration: none;
+            color: #e62b4a;
+        }
+        
+        .Footer .Container .List .Item .Content h3,
+        .Footer .Container .List .Item .Content img {
+            margin-bottom: 2rem;
+        }
+        
+        .Footer .Container .List .Item .Content li {
+            margin-bottom: 1rem;
+        }
+        
+        .Footer .Container .List .Item .Content .Anipat p {
+            margin-bottom: 2rem;
+        }
+        
+        .Footer .Container .List .Item .Content .Anipat .Icon_Social a {
+            padding-right: 0.6rem;
+        }
+        
+        .Container .Content_Footer p {
+            color: #7b7b7b;
+        }
